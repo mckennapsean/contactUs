@@ -1,0 +1,40 @@
+<form id="gform" class="contact-form form validate" method="POST" action="https://script.google.com/macros/s/AKfycbyOXMeJEI7-9pGNwJNnexXFEtfha8X2Sw5759Dz7OAFx_Dr8fA/exec">
+  <div class="row text-center">
+      <div class="contact-form-inner col-lg-8 col-12 mr-lg-auto ml-lg-auto">
+          <div class="row">
+                  
+              <div class="col-md-6 col-12 form-group">
+                  <label class="sr-only" for="mce-FNAME">Your firstname</label>
+                  <input type="text" class="form-control" id="mce-FNAME" name="FirstName" placeholder="Your firstname" required>
+              </div>
+              <div class="col-md-6 col-12 form-group">
+                  <label class="sr-only" for="mce-LNAME">Your lastname</label>
+                  <input type="text" class="form-control" id="mce-LNAME" name="LastName" placeholder="Your lastname" required>
+              </div>
+              <div class="col-md-6 col-12 form-group">
+                  <label class="sr-only" for="mce-MOBILE">Your mobile number</label>
+                  <input type="tel" class="form-control" id="mce-MOBILE" name="Mobile" placeholder="Your mobile" required>
+              </div>
+              <div class="col-md-6 col-12 form-group">
+                  <label class="sr-only" for="mce-EMAIL">Your email address</label>
+                  <input type="email" class="form-control" id="mce-EMAIL" name="Email" placeholder="Your email address" required>
+              </div>
+              <div class="col-12 form-group">
+                  <label class="sr-only" for="mce-MESSAGE">Your message</label>
+                  <textarea class="form-control" id="cmessage" name="Message" placeholder="Enter your message" rows="12" required></textarea>
+              </div>
+               <div class="col-12 form-group">
+                  <button type="submit" class="btn btn-block btn-cta btn-cta-primary" (click)="$event.stopPropagation()">Send Message</button>
+              </div>
+          </div><!--//row-->
+      </div>
+  </div><!--//row-->
+  <div id="form-messages"></div>
+  <p class="intro text-left">All fields required.</p>
+</form><!--//contact-form-->
+
+<div style="display:none;" id="thankyou_message">
+  <p class="intro text-center">
+      Thank you for your enquiry! We will contact you within 2 days.
+  </p>
+</div>
